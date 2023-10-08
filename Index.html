@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fam1oxm.css"> 
+    <title>OrangeBox</title> <!-- Updated title -->
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="/Users/davlenswain/OrangeBox Code/static/images/IMG_7634-removebg-preview.png" alt="logo">
+                <span class="navbar-title">OrangeBox</span>
+
+            </a>
+            <div class="navigation">
+                <h6>Takeoff Tools</h6>
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                grid_on
+                            </span>
+                            <span>Blueprints</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                straighten
+                            </span>
+                            <span>Measurements</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                list_alt
+                            </span>
+                            <span>Material Lists</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                assessment
+                            </span>
+                            <span>Estimates</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                notes
+                            </span>
+                            <span>Notes & Annotations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                settings
+                            </span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <h6>Recent Projects</h6>
+            <div class="projects">
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <span>Project A</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Renovation B</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Building C</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="pdf-container">
+                <canvas id="pdf-canvas"></canvas>
+                <button onclick="previousPage()">Previous</button>
+                <button onclick="nextPage()">Next</button>
+            </div>
+            
+            <div class="profile">
+                <a href="#">
+                    <img src="/Users/davlenswain/OrangeBox Code/static/images/Swain, Davlen1.jpg" alt="profile" />
+                </a>
+                <div>
+                    <h3>Davlen Swain</h3>
+                    <small>Construction Manager</small>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="cursor-tooltip"></div>
+    <script src="main.js"></script>
+    <script src="/Users/davlenswain/OrangeBox Code/pdfjs-3/build/pdf.worker.js"></script>
+    <script src="/Users/davlenswain/OrangeBox Code/pdfjs-3/build/pdf.js"></script>
+</body>
+
+</html>
